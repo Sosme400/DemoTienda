@@ -48,6 +48,9 @@ const RegistroCliente = () => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gradient-to-b from-black to-blue-900">
       <div className="relative w-full max-w-lg bg-black bg-opacity-70 border border-purple-500 p-8 rounded-xl shadow-lg">
+        <h1 className="text-white text-5xl font-extrabold text-center mb-4 bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500">
+          TiendaMC
+        </h1>
         <h2 className="text-white text-3xl font-bold text-center mb-4">Crea tu cuenta Ahora!!</h2>
 
         <div className="flex justify-center gap-4 mb-6">

@@ -35,6 +35,9 @@ const Login = () => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gradient-to-b from-black to-blue-900">
       <div className="relative w-full max-w-md bg-black bg-opacity-70 border border-purple-500 p-8 rounded-xl shadow-lg">
+        <h1 className="text-white text-5xl font-extrabold text-center mb-4 bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500">
+          TiendaMC
+        </h1>
         <h2 className="text-white text-3xl font-bold text-center mb-4">Iniciar Sesión</h2>
         
         {error && <p className="bg-red-100 text-red-700 p-2 rounded mb-4">{error}</p>}
