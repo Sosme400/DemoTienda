@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'; // Importar useNavigate
 
 const Login = () => {
   const [credentials, setCredentials] = useState({
@@ -24,8 +24,8 @@ const Login = () => {
     try {
       const response = await axios.post('http://localhost:8000/login', credentials);
       console.log('Usuario autenticado:', response.data);
-      // Redirigir a la página principal después del login exitoso
-      navigate('/');
+      // Redirigir a la página de inicio después del login exitoso
+      navigate('/home'); // Cambia '/home' al path que deseas para la página de inicio
     } catch (error) {
       setError('Error al iniciar sesión.');
       console.error('Error al iniciar sesión:', error);
